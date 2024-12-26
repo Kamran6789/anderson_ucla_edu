@@ -186,8 +186,8 @@ def extract_info_2014(response):
 
 
 if __name__ == '__main__':
-    api = pyairtable.Api('patAutBB8czI3ifML.c1e5aa28bb6f09cbb0d81815494d371003902e6f43500abebe713f307a505f25')
-    base = api.base('appISH2KhnZt5ElD8')
+    api = pyairtable.Api('api-key')
+    base = api.base('key')
     table = [v for v in base.tables() if v.name == 'Main Table'][0]
     process = CrawlerProcess()
     process.crawl(AndersonUclaWinnersSpider)
